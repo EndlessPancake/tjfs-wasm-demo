@@ -8,7 +8,7 @@ function status(text) {
 async function main() {
   
   // Set the backend to WASM and wait for the module to be ready.
-  await tf.setBackend("wasm");
+  // await tf.setBackend("wasm");
 
   let model = await tf.loadGraphModel(
     "https://tfhub.dev/google/imagenet/mobilenet_v2_100_224/classification/2",
